@@ -1,0 +1,49 @@
+/* Páginas de destino. Se carga después de estilos.css */
+.l-barra{display:flex;align-items:center;justify-content:space-between;padding:.8rem 4%;border-bottom:1px solid var(--linea);background:rgba(13,15,20,.96);position:sticky;top:0;z-index:50}
+.l-tel{color:var(--oro-claro);text-decoration:none;font-weight:600;letter-spacing:.04em}
+.l-hero{padding:clamp(3.5rem,9vw,7rem) 0;background:radial-gradient(ellipse at 85% 10%,rgba(201,164,92,.14),transparent 55%),var(--fondo)}
+.l-hero h1{max-width:18ch;font-size:clamp(2.3rem,6vw,4.2rem)}
+.confianza{border-block:1px solid var(--linea);background:var(--fondo2)}
+.confianza ul{list-style:none;display:flex;flex-wrap:wrap;justify-content:space-between;gap:.5rem 2rem;margin-block:0;padding:1rem 0;color:var(--oro-claro);font-family:var(--serif);font-size:1.25rem}
+.rev{list-style:none;margin:0;padding:0}
+.rev li{padding:1rem 0 1rem 1.6rem;border-bottom:1px solid var(--linea);position:relative;font-size:1.05rem}
+.rev li::before{content:"";position:absolute;left:0;top:1.55rem;width:.7rem;height:1px;background:var(--oro)}
+.pasos{margin:2.2rem 0 0;padding-left:1.4rem;display:grid;gap:1.1rem;max-width:60ch;color:var(--tenue)}
+.pasos strong{color:var(--texto);font-weight:600}
+.l-cita{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,6vw,5rem);align-items:start}
+.flotante{position:fixed;right:1rem;bottom:1rem;z-index:60;padding:.85rem 1.3rem;background:linear-gradient(135deg,var(--oro-claro),var(--oro) 55%,var(--bronce));color:#14110a;font:600 .85rem var(--sans);text-decoration:none;box-shadow:0 6px 24px rgba(0,0,0,.5)}
+@media (max-width:860px){.l-cita{grid-template-columns:1fr}.flotante{left:1rem;text-align:center}}
+/* Integración limpia del menú de navegación en la barra superior */
+.l-barra nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.l-barra nav ul li a {
+  color: var(--texto, #fff);
+  text-decoration: none;
+  font-family: var(--sans, sans-serif);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.l-barra nav ul li a:hover {
+  color: var(--oro-claro);
+}
+
+@media (max-width: 860px) {
+  .l-barra {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  .l-barra nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
