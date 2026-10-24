@@ -98,3 +98,22 @@ input:focus,select:focus,textarea:focus{border-color:var(--oro)}
 .flotante{position:fixed;right:1rem;bottom:1rem;z-index:60;padding:.85rem 1.3rem;background:linear-gradient(135deg,var(--oro-claro),var(--oro) 55%,var(--bronce));color:#14110a;font:600 .85rem var(--sans);text-decoration:none;box-shadow:0 6px 24px rgba(0,0,0,.5)}
 .enlaces-serv{margin:2rem 0 0;color:var(--tenue);font-size:.9rem}
 @media (max-width:860px){.flotante{left:1rem;text-align:center}}
+
+/* Estilo adaptado para la fotografía del Licenciado */
+#licenciado .dos-col {
+  align-items: center;
+}
+
+.foto-licenciado {
+  text-align: center;
+}
+.foto-licenciado img {
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  border-radius: 4px;
+  border: 1px solid var(--oro);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+  display: block;
+  margin-inline: auto;
+}
