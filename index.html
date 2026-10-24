@@ -3,116 +3,140 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Asesoría Legal, Contable y Fiscal en Guatemala | Espina Corporate Risk Advisory</title>
-  <meta name="description" content="Servicios integrales de derecho mercantil, auditoría y gestión fiscal en Ciudad de Guatemala. Consulte por WhatsApp.">
+  <title>Espina Corporate Risk Advisory | Abogado, Notario, Contador y Auditor</title>
+  <meta name="description" content="Asesoría legal, fiscal, contable y de auditoría corporativa en Ciudad de Guatemala. Anticipamos riesgos. Protegemos decisiones.">
+
+  <!-- Seguridad -->
   <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://www.googletagmanager.com; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://*.google-analytics.com https://www.googletagmanager.com; connect-src https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com; frame-src https://www.google.com; form-action 'none'; base-uri 'none'; object-src 'none'">
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="format-detection" content="telephone=no">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Montserrat:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="css/estilos.css">
-  <link rel="stylesheet" href="css/landing.css">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
   <script src="js/analytics.js"></script>
 </head>
 <body>
-  <header class="l-barra">
-    <a class="marca" href="index.html" aria-label="Espina Corporate Risk Advisory">
+  <a class="saltar" href="#servicios">Ir al contenido</a>
+
+  <header class="barra" id="barra">
+    <a class="marca" href="#inicio" aria-label="Espina Corporate Risk Advisory, inicio">
       <span class="monograma" aria-hidden="true">NE</span>
       <span class="marca-texto"><strong>ESPINA</strong><small>Corporate Risk Advisory</small></span>
     </a>
-    <nav>
-      <ul style="display: flex; list-style: none; gap: 15px; margin: 0; padding: 0;">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="contratos.html">Contratos</a></li>
-        <li><a href="auditoria.html">Auditoria</a></li>
-        <li><a href="fiscalidad.html">Fiscalidad</a></li>
-      </ul>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    <nav id="menu" class="menu">
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#licenciado">El Licenciado</a>
+      <a href="#contacto">Ubicación</a>
+      <a href="#cita" class="btn btn-mini">Agendar cita</a>
     </nav>
-    <a class="l-tel" href="tel:+50256072071">+502 5607 2071</a>
   </header>
 
   <main>
-    <section class="l-hero">
-      <div class="contenedor">
-        <p class="lema-sup">Corporate Risk Advisory</p>
-        <h1>Protección legal, contable y fiscal integral para su empresa</h1>
-        <p class="lead">Combinamos la perspectiva de Abogado y Notario con el análisis riguroso de Contador y Auditor para prevenir riesgos corporativos antes de que afecten su patrimonio.</p>
-        <div class="acciones">
-          <a class="btn" id="waHero" href="https://wa.me/50256072071?text=Hola%2C%20vi%20su%20sitio%20web%20y%20quiero%20solicitar%20una%20consulta." target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
-          <a class="btn btn-linea" href="tel:+50256072071">Llamar ahora</a>
+    <section class="hero" id="inicio">
+      <div class="contenedor hero-grid">
+        <div>
+          <p class="lema-sup">El valor de una decisión segura está en la prevención</p>
+          <h1>Anticipamos riesgos.<br><em>Protegemos decisiones.</em></h1>
+          <p class="lead">Asesoría legal, fiscal, contable y de auditoría para empresas y personas que no pueden permitirse errores.</p>
+          <div class="acciones">
+            <a href="#cita" class="btn">Agendar una cita</a>
+            <a class="btn btn-linea" id="waHero" href="https://wa.me/50256072071" target="_blank" rel="noopener noreferrer">Escribir por WhatsApp</a>
+          </div>
         </div>
+        <aside class="credencial" aria-label="Credenciales">
+          <p class="cred-nombre">Lic. Nery Estuardo Espina</p>
+          <ul>
+            <li>Abogado y Notario</li>
+            <li>Contador</li>
+            <li>Auditor</li>
+          </ul>
+        </aside>
       </div>
     </section>
 
-    <section class="confianza" aria-label="Credenciales">
-      <ul class="contenedor">
-        <li>Abogado y Notario</li>
-        <li>Contador</li>
-        <li>Auditor</li>
-      </ul>
+    <section class="seccion" id="servicios">
+      <div class="contenedor">
+        <h2>Áreas de práctica</h2>
+        <p class="sub">Cuatro áreas que se cruzan en cada decisión corporativa, atendidas por un solo despacho.</p>
+        <div class="areas">
+          <article><h3>Legal</h3><p>Contratos</p><p class="det">Redacción, revisión y negociación de contratos mercantiles y civiles, con respaldo notarial.</p></article>
+          <article><h3>Tax</h3><p>Fiscalidad</p><p class="det">Planificación y cumplimiento tributario, atención de requerimientos y defensa ante la autoridad fiscal.</p></article>
+          <article><h3>Audit</h3><p>Auditoría</p><p class="det">Revisión independiente de estados financieros y controles internos para detectar riesgos a tiempo.</p></article>
+          <article><h3>Corporate</h3><p>Contabilidad y cumplimiento corporativo</p><p class="det">Contabilidad ordenada, libros y registros al día, y gobierno corporativo conforme a la ley.</p></article>
+        </div>
+        <p class="enlaces-serv">Más información: <a href="contratos.html">Contratos</a> · <a href="fiscalidad.html">Fiscalidad</a> · <a href="auditoria.html">Auditoría</a></p>
+      </div>
     </section>
 
-    <section class="seccion">
+    <section class="seccion oscura" id="licenciado">
       <div class="contenedor dos-col">
         <div>
-          <h2>Áreas de práctica</h2>
+          <h2>Lic. Nery Estuardo Espina</h2>
+          <p class="sub">Abogado y Notario, Contador y Auditor</p>
         </div>
-        <ul class="rev">
-          <li><a href="contratos.html"><strong>Contratos:</strong> Revisión, redacción y estructuración legal de acuerdos mercantiles y civiles.</a></li>
-          <li><a href="auditoria.html"><strong>Auditoría:</strong> Evaluación de estados financieros, controles internos y prevención de fraudes.</a></li>
-          <li><a href="fiscalidad.html"><strong>Fiscalidad:</strong> Planeación tributaria, defensa fiscal y atención a requerimientos de la SAT.</a></li>
-        </ul>
+        <div class="texto">
+          <p>Reunir el derecho, la contabilidad y la auditoría en una misma mesa permite ver el riesgo completo: lo que dice el contrato, lo que reflejan los números y lo que exige la autoridad.</p>
+          <p>Cada asesoría parte de la prevención. Antes de firmar, invertir o responder a un requerimiento, revisamos el escenario para que la decisión sea segura.</p>
+        </div>
       </div>
     </section>
 
-    <section class="seccion oscura">
-      <div class="contenedor">
-        <h2>Cómo trabajamos</h2>
-        <ol class="pasos">
-          <li><strong>Usted nos cuenta su caso.</strong> Por WhatsApp, llamada o con el formulario.</li>
-          <li><strong>Revisamos el riesgo.</strong> Analizamos documentos y escenarios antes de que usted decida.</li>
-          <li><strong>Le damos una ruta clara.</strong> Recomendaciones concretas y, si lo requiere, ejecución del trámite.</li>
-        </ol>
-      </div>
-    </section>
-
-    <section class="seccion" id="cita">
-      <div class="contenedor l-cita">
+    <section class="seccion" id="contacto">
+      <div class="contenedor dos-col">
         <div>
-          <h2>Hablemos de su caso</h2>
-          <p class="sub">Escríbanos directamente o deje sus datos y lo contactamos.</p>
-          <div class="acciones">
-            <a class="btn" id="waForm" href="https://wa.me/50256072071?text=Hola%2C%20vi%20su%20sitio%20web%20y%20quiero%20solicitar%20una%20consulta." target="_blank" rel="noopener noreferrer">Abrir WhatsApp</a>
-          </div>
+          <h2>Ubicación y contacto</h2>
           <address>
             7a. Avenida 12-23, Zona 9<br>
             Edificio ETISA, Plazuela España, Nivel 4<br>
             Ciudad de Guatemala
           </address>
-          <p class="tel"><a href="mailto:neryespina@gmail.com">neryespina@gmail.com</a><br><a href="mailto:neryespina@hotmail.com">neryespina@hotmail.com</a></p>
+          <p class="tel">WhatsApp y teléfono: <a href="tel:+50256072071">+502 5607 2071</a></p>
+          <p class="tel">Correo:
+            <a href="mailto:neryespina@gmail.com">neryespina@gmail.com</a><br>
+            <a href="mailto:neryespina@hotmail.com">neryespina@hotmail.com</a>
+          </p>
+          <div class="acciones">
+            <a class="btn" href="https://wa.me/50256072071" target="_blank" rel="noopener noreferrer">Abrir WhatsApp</a>
+            <a class="btn btn-linea" href="https://www.google.com/maps/search/?api=1&amp;query=7a+Avenida+12-23+Zona+9+Edificio+ETISA+Ciudad+de+Guatemala" target="_blank" rel="noopener noreferrer">Ver en Google Maps</a>
+          </div>
+          <div class="mapa">
+            <iframe title="Ubicación de Espina Corporate Risk Advisory, Zona 9, Ciudad de Guatemala" src="https://www.google.com/maps?q=Edificio+ETISA,+7a+Avenida+12-23,+Zona+9,+Ciudad+de+Guatemala&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
         </div>
 
-        <form id="formLanding" class="form" novalidate autocomplete="off" data-tema="General" aria-label="Solicitar consulta">
+        <form id="formCita" class="form" novalidate autocomplete="off" aria-labelledby="tituloCita">
+          <h2 id="cita" class="h-form"><span id="tituloCita">Solicitar una cita</span></h2>
           <div class="campo"><label for="nombre">Nombre completo</label><input id="nombre" name="nombre" type="text" maxlength="80" required autocomplete="name"><span class="error" data-for="nombre"></span></div>
+          <div class="campo"><label for="correo">Correo electrónico</label><input id="correo" name="correo" type="email" maxlength="100" required autocomplete="email"><span class="error" data-for="correo"></span></div>
           <div class="campo"><label for="telefono">Teléfono</label><input id="telefono" name="telefono" type="tel" maxlength="20" required autocomplete="tel"><span class="error" data-for="telefono"></span></div>
-          <div class="campo"><label for="mensaje">¿En qué podemos ayudarle?</label><textarea id="mensaje" name="mensaje" rows="3" maxlength="500" required></textarea><span class="error" data-for="mensaje"></span></div>
+          <div class="campo"><label for="servicio">Tema de la consulta</label>
+            <select id="servicio" name="servicio" required>
+              <option value="">Seleccione una opción</option>
+              <option>Legal</option><option>Contratos</option><option>Tax / Fiscalidad</option>
+              <option>Audit / Auditoría</option><option>Contabilidad</option><option>Cumplimiento corporativo</option>
+            </select><span class="error" data-for="servicio"></span></div>
+          <div class="campo"><label for="mensaje">Mensaje</label><textarea id="mensaje" name="mensaje" rows="4" maxlength="500" required></textarea><span class="error" data-for="mensaje"></span></div>
           <div class="trampa" aria-hidden="true"><label for="sitio">No llenar</label><input id="sitio" name="sitio" type="text" tabindex="-1" autocomplete="off"></div>
-          <button type="submit" class="btn">Solicitar consulta</button>
+          <button type="submit" class="btn">Enviar por WhatsApp</button>
           <p class="estado" id="estado" role="status" aria-live="polite"></p>
-          <p class="nota">Al enviar se abre WhatsApp con su mensaje. No almacenamos sus datos.</p>
+          <p class="nota">Sus datos no se almacenan: al enviar se abre WhatsApp con su mensaje ya redactado.</p>
         </form>
       </div>
     </section>
   </main>
 
   <footer class="pie">
-    <p>&copy; <span id="anio">2026</span> Espina Corporate Risk Advisory. <a href="index.html">Sitio principal</a></p>
+    <p>&copy; <span id="anio">2026</span> Espina Corporate Risk Advisory. Todos los derechos reservados.</p>
   </footer>
 
-  <a class="flotante" id="waFlotante" href="https://wa.me/50256072071?text=Hola%2C%20vi%20su%20sitio%20web%20y%20quiero%20solicitar%20una%20consulta." target="_blank" rel="noopener noreferrer">WhatsApp</a>
-  <script src="js/landing.js"></script>
+  <a class="flotante" id="waFlotante" target="_blank" rel="noopener noreferrer" href="https://wa.me/50256072071?text=Hola%2C%20vi%20su%20sitio%20web%20y%20quiero%20agendar%20una%20consulta.">Consulta por WhatsApp</a>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
