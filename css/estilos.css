@@ -117,3 +117,7 @@ input:focus,select:focus,textarea:focus{border-color:var(--oro)}
   display: block;
   margin-inline: auto;
 }
+/* Esto solo afecta a la palabra ESPINA en el encabezado */
+.marca-texto strong {
+    font-size: 32px; 
+}
